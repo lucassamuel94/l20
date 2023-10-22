@@ -3,7 +3,36 @@
 @tailwind utilities;
 
 @layer components {
-	.container {
-		@apply max-w-[1312px] px-4 sm:px-6 md:px-8 2xl:px-0 mx-auto;
-	}
+  section {
+    @apply py-20 lg:py-28;
+  }
+
+  .container {
+    @apply max-w-[1312px] px-6 sm:px-6 md:px-8 2xl:px-0 mx-auto;
+  }
+
+  .heading2 {
+    @apply text-[40px]/[48px] lg:text-[56px]/[67px] font-semibold tracking-tighter;
+  }
+}
+
+.swiper-wrapper {
+  padding-block: 3rem;
+}
+
+.swiper-pagination {
+  left: 1.5rem !important;
+  bottom: 0px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 24px !important;
+  height: 6px !important;
+  opacity: 0.6 !important;
+  background: #f8e08e !important;
+  border-radius: 2px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1 !important;
 }
