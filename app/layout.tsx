@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { siteConfig } from '@/config/site'
-import { archivo } from '@/lib/fonts'
+import { beVietnamPro } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 
 import '@/styles/globals.css'
@@ -20,8 +20,8 @@ export default function RootLayout({
     <html lang='pt-BR' suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-screen bg-gray-50 font-sans antialiased',
-          archivo.variable,
+          'min-h-screen overflow-x-hidden bg-black font-sans font-normal text-white antialiased',
+          beVietnamPro.variable,
         )}
       >
         {children}
