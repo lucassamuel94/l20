@@ -12,10 +12,16 @@ module.exports = {
       xl: '1280px',
       '2xl': '1366px',
     },
+    colors: {
+      black: '#070707',
+      white: '#fafafa',
+      primary: '#F8E08E',
+      secondary: '#8ED2F8'
+    },
     extend: {
       fontFamily: {
-        sans: ['var(--font-archivo), sans-serif'],
-      },
+        sans: ['var(--font-beVietnamPro), sans-serif'],
+      }
     },
   },
   plugins: [],
