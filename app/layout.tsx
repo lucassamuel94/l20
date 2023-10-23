@@ -4,6 +4,7 @@ import { siteConfig } from '@/config/site'
 import { beVietnamPro } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 
+import Footer from '@/components/footer'
 import '@/styles/globals.css'
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <Footer />
       </body>
     </html>
   )
