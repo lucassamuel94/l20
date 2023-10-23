@@ -15,8 +15,14 @@ module.exports = {
     colors: {
       black: '#070707',
       white: '#fafafa',
-      primary: '#F8E08E',
-      secondary: '#8ED2F8'
+      primary: {
+        DEFAULT: '#F8E08E',
+        hover: '#f4cb55'
+      },
+      secondary: {
+        DEFAULT: '#8ED2F8',
+        hover: '#3fb4f1'
+      },
     },
     extend: {
       fontFamily: {
