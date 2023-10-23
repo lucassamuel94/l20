@@ -16,12 +16,12 @@ export function Vantagens() {
   {
     id: 3,
     title: 'Entrega rápida',
-    description: 'Não perca tempo procurando uma agência ou freelancers. Pule as intermináveis ​​idas e vindas e obtenha o trabalho desenvolvido no Webflow em velocidade recorde!'
+    description: 'Não perca tempo procurando uma agência ou freelancers. Pule as intermináveis ​​idas e vindas e obtenha o trabalho desenvolvido em velocidade recorde!'
   },
   {
     id: 4,
     title: 'Sem taxas extras',
-    description: 'Livre-se das taxas de manutenção, nós entregamos um site livre de dores de cabeça. Enviamos um treinamento para você conseguir fazer edições básicas no seu site.'
+    description: 'Livre-se das taxas de manutenção, nós entregamos um site livre de dores de cabeça.'
   },
   {
     id: 5,
