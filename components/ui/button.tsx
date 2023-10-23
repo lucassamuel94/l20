@@ -1,15 +1,15 @@
 import { cn } from '@/lib/utils'
 import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from "class-variance-authority"
-import { ButtonHTMLAttributes, ReactNode, forwardRef } from 'react'
+import { ButtonHTMLAttributes, forwardRef, ReactNode } from 'react'
 
 
-const buttonVariants = cva('rounded-full px-6 py-3 font-medium text-black', {
+const buttonVariants = cva('rounded-full px-6 py-3 font-medium text-black transition-all duration-300', {
   variants: {
     variant: {
-      primary: 'bg-primary',
-      secondary: 'bg-secondary',
-      white: 'bg-white'
+      primary: 'bg-primary hover:bg-primary-hover',
+      secondary: 'bg-secondary hover:bg-secondary-hover',
+      white: 'bg-white hover:bg-white/95'
     }
   },
   defaultVariants: {
