@@ -12,7 +12,7 @@ import { Cases, NossoProcesso, SitePorAssinatura, SitePremium, Valores, Vantagen
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-start">
+    <main className="flex flex-col items-start bg-[url('/bg-hero-home.png')] bg-top bg-no-repeat">
       <header className="container pt-6 lg:flex lg:items-center lg:justify-between">
         <>
           <h1 className="sr-only">L20 Comunicações</h1>
