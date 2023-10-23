@@ -44,7 +44,7 @@ export function Cases() {
           </figure>
         </li>
 
-        <li className="flex flex-col-reverse overflow-hidden rounded-3xl bg-[#060C22] lg:grid lg:grid-cols-[1fr,648px] lg:items-center">
+        <li className="flex flex-col-reverse overflow-hidden rounded-3xl bg-[#060C22] lg:grid lg:h-[500px] lg:grid-cols-[1fr,648px] lg:justify-center">
           <figure>
             <Image src={'/case-placeholder-rafinha-turismo.png'} alt="Imagem com print das telas desenvolvidas para o projeto da website ROMMI" width={885} height={644} quality={100} className="object-cover lg:h-[650px] lg:object-right" />
           </figure>
