@@ -1,11 +1,18 @@
 import { Button } from "@/components/ui/button";
+import { animations } from "@/styles/animations";
+import { motion } from 'framer-motion';
 import { CheckIcon } from "lucide-react";
 import Image from "next/image";
 
 export function SitePorAssinatura() {
   return (
     <section id='sobre_site_por_assinatura' className="container flex flex-col gap-20 md:flex-row">
-      <div className="flex flex-col md:max-w-[414px]">
+      <motion.div
+        variants={animations}
+        initial={"openLeft"}
+        whileInView={'whileLeft'}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="flex flex-col md:max-w-[414px]">
         <span className="font-semibold text-secondary">Novidade 👏🏽</span>
         <h3 className="heading2 mt-4">Site por assinatura</h3>
         <p className="mt-6">É isso mesmo, com a L20, você pode colocar seu site no ar, durante o tempo que for necessário, muito similar a uma assinatura da Netflix, então não deixe para depois e comece agora mesmo.</p>
@@ -35,10 +42,15 @@ export function SitePorAssinatura() {
         <Button variant='secondary' className="mt-10 w-max">
           Contratar agora
         </Button>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        variants={animations}
+        initial={"openLeft"}
+        whileInView={'whileLeft'}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         <Image src='/site-por-assinatura.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} />
-      </div>
+      </motion.div>
     </section>
   )
 }

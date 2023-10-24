@@ -8,11 +8,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 // Import Swiper styles
+import { animations } from "@/styles/animations";
+import { motion } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
 
 export function NossoProcesso() {
   const dataSwiper = [{
@@ -50,7 +51,11 @@ export function NossoProcesso() {
   return (
     <section className="container my-10 grid grid-cols-1 gap-20 lg:grid-cols-[414px,1fr]">
       <div>
-        <div className="grid grid-cols-1">
+        <motion.div
+          variants={animations}
+          initial={"openLeft"}
+          whileInView={'whileLeft'}
+          transition={{ duration: 1, delay: 0.2 }} className="grid grid-cols-1">
           <div className="space-y-4">
             <h3>Nosso Processo</h3>
             <h4 className="mb-10 text-4xl font-semibold lg:text-5xl/[57.6px]">
@@ -64,10 +69,14 @@ export function NossoProcesso() {
               Quero ter um site
             </a>
           </Button>
-        </div>
+        </motion.div>
       </div>
 
-      <div>
+      <motion.div
+        variants={animations}
+        initial={"openLeft"}
+        whileInView={'whileLeft'}
+        transition={{ duration: 1, delay: 0.5 }}>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={48}
@@ -103,7 +112,7 @@ export function NossoProcesso() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </motion.div>
     </section>
   )
 }

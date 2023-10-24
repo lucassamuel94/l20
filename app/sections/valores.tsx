@@ -1,14 +1,19 @@
 import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/config/site"
+import { animations } from "@/styles/animations"
+import { motion } from 'framer-motion'
 import { CheckIcon } from "lucide-react"
-
-
 
 export function Valores() {
   return (
     <section className="container border-t border-white/10">
 
-      <div className="grid grid-cols-1 gap-20">
+      <motion.div
+        variants={animations}
+        initial={"openLeft"}
+        whileInView={'whileLeft'}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="grid grid-cols-1 gap-20">
         <div className="space-y-4">
           <h3>Valores</h3>
           <h4 className="mb-10 text-4xl font-semibold lg:text-5xl/[57.6px]">
@@ -17,15 +22,20 @@ export function Valores() {
           <p></p>
         </div>
 
-        <div className="space-y-20">
+        <motion.div
+          variants={animations}
+          initial={"openLeft"}
+          whileInView={'whileLeft'}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="space-y-20">
           <div className="grid grid-cols-1 gap-20 lg:grid-cols-2">
             <CardSitePorAssinatura01 />
             <CardSitePorAssinatura02 />
           </div>
 
           <CardSitePremium />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   )
 }

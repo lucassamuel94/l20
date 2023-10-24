@@ -1,17 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+import { animations } from "@/styles/animations";
+import { motion } from 'framer-motion';
 import Image from "next/image";
 
 export function SitePremium() {
   return (
 
     <section id='sobre_site_premium' className="container flex flex-col-reverse gap-20 border-t border-white/10 md:flex-row">
-      <div className="grid-row-2 grid space-y-1">
+      <motion.div
+        variants={animations}
+        initial={"openLeft"}
+        whileInView={'whileLeft'}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="grid-row-2 grid space-y-1">
         <Image src='/site-premium-01.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="lg:h-full" />
         <Image src='/site-premium-02.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="lg:h-full" />
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col md:max-w-[414px]">
+      <motion.div
+        variants={animations}
+        initial={"openLeft"}
+        whileInView={'whileLeft'}
+        transition={{
+          duration: 1, delay: 0.7
+        }}
+        className="flex flex-col md:max-w-[414px]">
         <span className="font-semibold text-primary">Ualll 😁</span>
         <h3 className="heading2 mt-4">Já conhece a nossa opção de site Premium?</h3>
         <p className="mt-6">Você tem um projeto único e quer marcar sua presença no mundo digital? Quer ter um site impactante e que te gere resultados? E que tal ter uma integração com WhatsApp, para direcionar seus leads diretamente? Ou até mesmo ter um formulário personalizado no seu próprio site... Eitaaaa, mal comecei e falar e olha a infinidade de possibilidades.</p>
@@ -36,7 +50,7 @@ export function SitePremium() {
             Falar com um especialista
           </a>
         </Button>
-      </div>
+      </motion.div>
 
     </section>
   )

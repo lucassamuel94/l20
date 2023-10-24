@@ -1,5 +1,8 @@
+import { motion } from 'framer-motion';
+
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+import { animations } from "@/styles/animations";
 import { BadgeCheck } from "lucide-react";
 
 export function Vantagens() {
@@ -36,7 +39,12 @@ export function Vantagens() {
 
   return (
     <section id='vantagens' className="container grid grid-cols-1 gap-20 border-t border-white/10 lg:grid-cols-[414px,1fr]">
-      <div className="">
+      <motion.div
+        variants={animations}
+        initial={"openLeft"}
+        whileInView={'whileLeft'}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
         <h3 className="mb-10 text-4xl font-semibold lg:text-5xl/[57.6px]">
           Vantagens em ter o seu website desenvolvido pela L20
         </h3>
@@ -46,19 +54,24 @@ export function Vantagens() {
             Quero ter um site
           </a>
         </Button>
-      </div>
+      </motion.div>
 
       <ul className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:gap-12">
 
         {dataList.map(({ id, title, description }) => (
-          <li key={id} className="grid grid-cols-[32px,1fr] gap-3">
+          <motion.li
+            variants={animations}
+            initial={"openLeft"}
+            whileInView={'whileLeft'}
+            transition={{ duration: 1, delay: 0.5 }}
+            key={id} className="grid grid-cols-[32px,1fr] gap-3">
             <BadgeCheck size={24} className="mt-1 text-secondary" />
 
             <div className="space-y-6">
               <h4 className="text-2xl font-semibold">{title}</h4>
               <p className="">{description}</p>
             </div>
-          </li>
+          </motion.li>
 
         ))}
 
