@@ -6,10 +6,9 @@ import Image from "next/image";
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-
-// Import Swiper styles
 import { animations } from "@/styles/animations";
 import { motion } from 'framer-motion';
+// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -79,18 +78,20 @@ export function NossoProcesso() {
         transition={{ duration: 1, delay: 0.5 }}>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={48}
           breakpoints={{
             320: {
               slidesPerView: 1,
-              centeredSlides: true
+              centeredSlides: true,
+              spaceBetween: 16,
             },
             576: {
               slidesPerView: 2,
-              centeredSlides: false
+              centeredSlides: false,
+              spaceBetween: 24,
             },
             992: {
-              slidesPerView: 3
+              slidesPerView: 3,
+              spaceBetween: 48,
             }
           }}
           pagination={{
@@ -100,7 +101,7 @@ export function NossoProcesso() {
         >
 
           {dataSwiper.map(({ id, figure, title, resume }) => (
-            <SwiperSlide key={id} className="relative !w-[300px] overflow-y-visible rounded-md bg-white/5 p-6">
+            <SwiperSlide key={id} className="relative md:!w-[300px] overflow-y-visible rounded-md bg-white/5 p-6">
               <div className="z-10 ">
                 <Image src={`/figure-${figure}.png`} alt='figure' width={48} height={48} quality={100} />
               </div>

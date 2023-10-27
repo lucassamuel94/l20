@@ -31,9 +31,11 @@ export default function Home() {
           </Link>
         </div>
 
-        <Button className="hidden items-center gap-2 lg:inline-flex ">
-          <span>Enviar mensagem</span>
-          <MoveRight />
+        <Button className="hidden items-center gap-2 lg:inline-flex" asChild>
+          <a href={siteConfig.links.whatsapp}>
+            <span>Enviar mensagem</span>
+            <MoveRight />
+          </a>
         </Button>
       </motion.header>
 

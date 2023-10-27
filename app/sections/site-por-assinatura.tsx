@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function SitePorAssinatura() {
   return (
-    <section id='sobre_site_por_assinatura' className="container flex flex-col gap-20 md:flex-row">
+    <section id='site_por_assinatura' className="container flex flex-col gap-20 md:flex-row">
       <motion.div
         variants={animations}
         initial={"openLeft"}

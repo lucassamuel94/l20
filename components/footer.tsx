@@ -1,4 +1,5 @@
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
+import { siteConfig } from "@/config/site";
+import { FacebookIcon, InstagramIcon, PartyPopperIcon } from "lucide-react";
 import Link from "next/link";
 import { Icons } from '../components/icons';
 
@@ -30,13 +31,13 @@ export default function Footer() {
                 </li>
 
                 <li>
-                  <Link href={'/'}>
+                  <Link href={'#site_por_assinatura'}>
                     Site por Assinatura
                   </Link>
                 </li>
 
                 <li>
-                  <Link href={'/'}>
+                  <Link href={'#site_premium'}>
                     Site Premium
                   </Link>
                 </li>
@@ -52,24 +53,24 @@ export default function Footer() {
             <div className="space-y-4">
               <span className="font-bold">Siga-nos</span>
               <ul className="space-y-4 text-sm">
-                <li>
-                  <a href="#" className="inline-flex items-center gap-2">
+                <li className="hover:border-b-2 border-white/40 inline-flex transition-all duration-300">
+                  <a href='#' className="inline-flex items-center gap-2">
                     <FacebookIcon size={16} />
                     <span>Facebook</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="inline-flex items-center gap-2">
+                  <a href={siteConfig.links.instagram} className="inline-flex items-center gap-2">
                     <InstagramIcon size={16} />
                     <span>Instagram</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="inline-flex items-center gap-2">
-                    <LinkedinIcon size={16} />
-                    <span>Linkedin</span>
+                  <a href={siteConfig.links.whatsapp} className="inline-flex items-center gap-2">
+                    <PartyPopperIcon size={16} />
+                    <span>Iniciar um projeto</span>
                   </a>
                 </li>
               </ul>

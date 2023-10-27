@@ -7,15 +7,15 @@ import Image from "next/image";
 export function SitePremium() {
   return (
 
-    <section id='sobre_site_premium' className="container flex flex-col-reverse gap-20 border-t border-white/10 md:flex-row">
+    <section id='site_premium' className="container flex flex-col-reverse gap-20 border-t border-white/10 md:flex-row">
       <motion.div
         variants={animations}
         initial={"openLeft"}
         whileInView={'whileLeft'}
         transition={{ duration: 1, delay: 0.2 }}
         className="grid-row-2 grid space-y-1">
-        <Image src='/site-premium-01.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="lg:h-full" />
-        <Image src='/site-premium-02.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="lg:h-full" />
+        <Image src='/site-premium-01.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="lg:h-full object-cover" />
+        <Image src='/site-premium-02.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="lg:h-full object-cover" />
       </motion.div>
 
       <motion.div
