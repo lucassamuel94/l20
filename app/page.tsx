@@ -11,6 +11,7 @@ import { Cases, NossoProcesso, SitePorAssinatura, SitePremium, Valores, Vantagen
 
 import { animations, transition } from "@/styles/animations";
 import { motion } from 'framer-motion';
+import Script from "next/script";
 
 
 
@@ -18,6 +19,19 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-start bg-[url('/bg-hero-home.webp')] bg-top bg-no-repeat">
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-09WK82CGM3"></Script>
+      <Script id='google-analytics'>
+        {
+          `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-09WK82CGM3');
+          `
+        }
+      </Script>
+
       <motion.header
         variants={animations}
         initial={"openUp"}
@@ -26,7 +40,7 @@ export default function Home() {
         className="container pt-6 lg:flex lg:items-center lg:justify-between">
         <div>
           <h1 className="sr-only">L20 Comunicações</h1>
-          <Link href={'/'}>
+          <Link href={'/'} tabIndex={1}>
             <Icons.logo className="h-8 lg:h-12" />
           </Link>
         </div>
