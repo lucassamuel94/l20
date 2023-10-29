@@ -17,7 +17,7 @@ import { motion } from 'framer-motion';
 export default function Home() {
 
   return (
-    <main className="flex flex-col items-start bg-[url('/bg-hero-home.png')] bg-top bg-no-repeat">
+    <main className="flex flex-col items-start bg-[url('/bg-hero-home.webp')] bg-top bg-no-repeat">
       <motion.header
         variants={animations}
         initial={"openUp"}

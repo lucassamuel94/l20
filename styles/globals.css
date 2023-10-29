@@ -26,13 +26,19 @@
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  width: 24px !important;
-  height: 6px !important;
-  opacity: 0.6 !important;
-  background: #f8e08e !important;
-  border-radius: 2px;
+  display: hidden;
 }
 
+@media (min-width: 992px) {
+  .swiper-pagination .swiper-pagination-bullet {
+    display: inline-flex;
+    width: 24px !important;
+    height: 6px !important;
+    opacity: 0.6 !important;
+    background: #f8e08e !important;
+    border-radius: 2px;
+  }
+}
 .swiper-pagination .swiper-pagination-bullet-active {
   opacity: 1 !important;
 }

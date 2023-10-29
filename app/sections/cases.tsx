@@ -40,13 +40,13 @@ export function Cases() {
           </div>
 
           <figure>
-            <Image src={'/case-placeholder-rommi.png'} alt="Imagem com print das telas desenvolvidas para o projeto da website ROMMI" width={885} height={644} quality={100} className="object-cover lg:h-[650px] lg:object-left " />
+            <Image src={'/case-placeholder-rommi.webp'} alt="Imagem com print das telas desenvolvidas para o projeto da website ROMMI" width={885} height={644} quality={100} className="overflow-hidden rounded-2xl object-cover lg:h-[650px] lg:object-left " />
           </figure>
         </li>
 
         <li className="flex flex-col-reverse overflow-hidden rounded-3xl bg-[#060C22] lg:grid lg:h-[500px] lg:grid-cols-[1fr,648px] lg:justify-center">
           <figure>
-            <Image src={'/case-placeholder-rafinha-turismo.png'} alt="Imagem com print das telas desenvolvidas para o projeto da website ROMMI" width={885} height={644} quality={100} className="object-cover lg:h-[650px] lg:object-right" />
+            <Image src={'/case-placeholder-rafinha-turismo.webp'} alt="Imagem com print das telas desenvolvidas para o projeto da website ROMMI" width={885} height={644} quality={100} className="overflow-hidden rounded-2xl object-cover lg:h-[650px] lg:object-right" />
           </figure>
 
           <div className="px-6 py-16 lg:px-16">

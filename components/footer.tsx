@@ -1,5 +1,5 @@
 import { siteConfig } from "@/config/site";
-import { FacebookIcon, InstagramIcon, PartyPopperIcon } from "lucide-react";
+import { FacebookIcon, InstagramIcon, MailIcon, PartyPopperIcon, PhoneCallIcon } from "lucide-react";
 import Link from "next/link";
 import { Icons } from '../components/icons';
 
@@ -13,10 +13,18 @@ export default function Footer() {
               <Icons.logo className="h-8 lg:h-12" />
             </Link>
 
-            <div className="mt-4 grid gap-1 text-sm">
-              <span className="font-semibold">Contato:</span>
-              <a href="tel:+5534997741210" className="mt-1">(34) 99774-1210</a>
-              <a href="mailto:contato@l20comunicacoes.com.br">contato@l20comunicacoes.com.br</a>
+            <div className="mt-4 grid gap-4 text-sm">
+              {/* <span className="font-semibold">Contato</span> */}
+              <div className="inline-flex items-center gap-2">
+                <PhoneCallIcon size={16} />
+                <a href="tel:+5534997741210" className="mt-1">(34) 99774-1210</a>
+              </div>
+              <div className="inline-flex items-center gap-2">
+                <MailIcon size={16} />
+                <a href="mailto:contato@l20comunicacoes.com.br">contato@l20comunicacoes.com.br</a>
+              </div>
+
+
             </div>
           </div>
 
@@ -53,7 +61,7 @@ export default function Footer() {
             <div className="space-y-4">
               <span className="font-bold">Siga-nos</span>
               <ul className="space-y-4 text-sm">
-                <li className="hover:border-b-2 border-white/40 inline-flex transition-all duration-300">
+                <li className="inline-flex border-white/40 transition-all duration-300 hover:border-b-2">
                   <a href='#' className="inline-flex items-center gap-2">
                     <FacebookIcon size={16} />
                     <span>Facebook</span>

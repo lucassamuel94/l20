@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
 import { animations } from "@/styles/animations";
 import { motion } from 'framer-motion';
 import { CheckIcon } from "lucide-react";
@@ -39,8 +40,10 @@ export function SitePorAssinatura() {
           </li>
         </ul>
 
-        <Button variant='secondary' className="mt-10 w-max">
-          Contratar agora
+        <Button variant='secondary' className="mt-10 w-max" asChild>
+          <a href={siteConfig.links.whatsapp} target="_blank" rel="noopener noreferrer">
+            Contratar agora
+          </a>
         </Button>
       </motion.div>
       <motion.div
@@ -49,7 +52,7 @@ export function SitePorAssinatura() {
         whileInView={'whileLeft'}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        <Image src='/site-por-assinatura.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} />
+        <Image src='/site-por-assinatura.webp' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="overflow-hidden rounded-2xl object-cover" />
       </motion.div>
     </section>
   )

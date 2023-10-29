@@ -14,8 +14,8 @@ export function SitePremium() {
         whileInView={'whileLeft'}
         transition={{ duration: 1, delay: 0.2 }}
         className="grid-row-2 grid space-y-1">
-        <Image src='/site-premium-01.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="lg:h-full object-cover" />
-        <Image src='/site-premium-02.png' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="lg:h-full object-cover" />
+        <Image src='/site-premium-01.webp' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="overflow-hidden rounded-2xl object-cover lg:h-full" />
+        <Image src='/site-premium-02.webp' alt='Imagem com vários print de telas desenvolvidas pela equipe da L20' width={818} height={555} quality={100} className="overflow-hidden rounded-2xl object-cover lg:h-full" />
       </motion.div>
 
       <motion.div

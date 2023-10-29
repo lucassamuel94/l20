@@ -59,44 +59,45 @@ const CardSitePorAssinatura01: React.FC = () => {
         </div>
       </div>
 
-      <ul className="grid gap-4 border-y border-white py-8">
+      <div className="grid gap-4 border-y border-white py-8">
         <span>Incluso:</span>
+        <ul className="grid gap-4">
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              One Page
+            </span>
+          </li>
 
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            One Page
-          </span>
-        </li>
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              Assinatura mensal
+            </span>
+          </li>
 
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            Assinatura mensal
-          </span>
-        </li>
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              Sem fidelidade
+            </span>
+          </li>
 
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            Sem fidelidade
-          </span>
-        </li>
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              Hospedagem e domínio
+            </span>
+          </li>
 
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            Hospedagem e domínio
-          </span>
-        </li>
-
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            Integração com WhatsApp
-          </span>
-        </li>
-      </ul>
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              Integração com WhatsApp
+            </span>
+          </li>
+        </ul>
+      </div>
 
       <Button asChild variant={'white'} className="text-center font-bold">
         <a href={siteConfig.links.whatsapp} target="_blank" rel="noopener noreferrer">
@@ -127,44 +128,45 @@ const CardSitePorAssinatura02: React.FC = () => {
         </div>
       </div>
 
-      <ul className="grid gap-4 border-y border-white py-8">
+      <div className="grid gap-4 border-y border-white py-8">
         <span>Incluso:</span>
+        <ul className="grid gap-4">
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              Website com até 3 páginas
+            </span>
+          </li>
 
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            Website com até 3 páginas
-          </span>
-        </li>
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              Assinatura mensal
+            </span>
+          </li>
 
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            Assinatura mensal
-          </span>
-        </li>
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              Sem fidelidade
+            </span>
+          </li>
 
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            Sem fidelidade
-          </span>
-        </li>
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              Hospedagem e domínio
+            </span>
+          </li>
 
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            Hospedagem e domínio
-          </span>
-        </li>
-
-        <li className="inline-flex items-center gap-2">
-          <CheckIcon className="w-5 text-white" />
-          <span>
-            Integração com WhatsApp
-          </span>
-        </li>
-      </ul>
+          <li className="inline-flex items-center gap-2">
+            <CheckIcon className="w-5 text-white" />
+            <span>
+              Integração com WhatsApp
+            </span>
+          </li>
+        </ul>
+      </div>
 
       <Button asChild variant={'white'} className="text-center font-bold">
         <a href={siteConfig.links.whatsapp} target="_blank" rel="noopener noreferrer">
@@ -190,11 +192,11 @@ const CardSitePremium: React.FC = () => {
         </div>
       </header>
 
-      <ul className="border-y border-white py-8">
+      <div className="border-y border-white py-8">
         <p className="mb-4">Incluso:</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="grid gap-4">
+          <ul className="grid gap-4">
             <li className="inline-flex items-center gap-2">
               <CheckIcon className="w-5 text-white" />
               <span> UX - Copywhiting </span>
@@ -219,9 +221,9 @@ const CardSitePremium: React.FC = () => {
               <CheckIcon className="w-5 text-white" />
               <span>Desenvolvimento</span>
             </li>
-          </div>
+          </ul>
 
-          <div className="grid gap-4">
+          <ul className="grid gap-4">
             <li className="inline-flex items-center gap-2">
               <CheckIcon className="w-5 text-white" />
               <span>Domínio</span>
@@ -246,9 +248,9 @@ const CardSitePremium: React.FC = () => {
               <CheckIcon className="w-5 text-white" />
               <span>Suporte</span>
             </li>
-          </div>
+          </ul>
         </div>
-      </ul>
+      </div>
 
       <Button asChild variant={'secondary'} className="text-center font-bold">
         <a href={siteConfig.links.whatsapp} target="_blank" rel="noopener noreferrer">
