@@ -1,11 +1,13 @@
-import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react';
+import type { Metadata } from 'next';
 
-import { siteConfig } from '@/config/site'
-import { beVietnamPro } from '@/lib/fonts'
-import { cn } from '@/lib/utils'
 
-import Footer from '@/components/footer'
-import '@/styles/globals.css'
+import { siteConfig } from '@/config/site';
+import { beVietnamPro } from '@/lib/fonts';
+import { cn } from '@/lib/utils';
+
+import Footer from '@/components/footer';
+import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -27,6 +29,7 @@ export default function RootLayout({
       >
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
