@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button"
-import { siteConfig } from "@/config/site"
-import { animations } from "@/styles/animations"
-import { motion } from 'framer-motion'
-import { CheckIcon } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import { animations } from "@/styles/animations";
+import { motion } from 'framer-motion';
+import { CheckIcon } from "lucide-react";
 
 export function Valores() {
   return (
@@ -28,16 +28,16 @@ export function Valores() {
           whileInView={'whileLeft'}
           transition={{ duration: 1, delay: 0.5 }}
           className="space-y-20">
-          <div className="grid grid-cols-1 gap-20 lg:grid-cols-2">
+          {/* <div className="grid grid-cols-1 gap-20 lg:grid-cols-2">
             <CardSitePorAssinatura01 />
             <CardSitePorAssinatura02 />
-          </div>
+          </div> */}
 
           <CardSitePremium />
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }
 
 const CardSitePorAssinatura01: React.FC = () => {
@@ -105,8 +105,8 @@ const CardSitePorAssinatura01: React.FC = () => {
         </a>
       </Button>
     </div>
-  )
-}
+  );
+};
 
 
 const CardSitePorAssinatura02: React.FC = () => {
@@ -174,8 +174,8 @@ const CardSitePorAssinatura02: React.FC = () => {
         </a>
       </Button>
     </div>
-  )
-}
+  );
+};
 
 
 const CardSitePremium: React.FC = () => {
@@ -258,5 +258,5 @@ const CardSitePremium: React.FC = () => {
         </a>
       </Button>
     </div>
-  )
-}
+  );
+};
